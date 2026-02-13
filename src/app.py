@@ -1,6 +1,7 @@
 import streamlit as st
 from backend.model import generate_response
 
+
 st.set_page_config(
     page_title="Org Suppport Chatbot",
     page_icon="💬",
@@ -45,7 +46,13 @@ Answer:
 """
 
     bot_response = generate_response(prompt)
+    bot_response = bot_response.strip(f"""You are a helpful organization support chatbot.
+Answer clearly and professionally.
 
+User question:
+{user_input}
+
+Answer:""")
     with st.chat_message("assistant"):
         st.markdown(bot_response)
 
