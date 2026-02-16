@@ -1,5 +1,7 @@
 # slm-org-chatbot
 
+App link - https://huggingface.co/spaces/dhyanisudhanshu01/slm-org-chatbot
+
 This project is a **fully open-source, zero-cost organization chatbot**
 designed to run on **low-resource systems** while ensuring **company data security**.
 
